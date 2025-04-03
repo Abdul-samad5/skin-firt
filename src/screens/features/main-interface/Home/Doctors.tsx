@@ -79,6 +79,102 @@ const Doctors = () => {
                         </View>
                     </View>
                 </View>
+                <View className='bg-[#CAD6FF] rounded-2xl pl-3 pr-2 py-2 mt-2'>
+                    <View className='flex flex-row items-center gap-2'>
+                        <View className='w-14 h-14 rounded-full' >
+                            <Image source={profile2} className='h-full w-full object-contain' />
+                        </View>
+                        <View>
+                            <View className='w-56  px-4 py-2'>
+                                <Text className='text-[#2260FF] font-medium text-sm'>
+                                    Dr. Alexander Bennett, Ph.D.
+                                </Text>
+                                <Text className='text-black font-light text-xs' style={{ fontFamily: 'LeagueSpartan-Bold' }}>
+                                    Dermato-Genetics
+                                </Text>
+                            </View>
+                            <View className='mt-3'>
+                                <View className='flex flex-row gap-3 items-center'>
+                                    <View className='flex flex-row gap-1'>
+                                        <View className='bg-[#2260FF] rounded-xl flex flex-row w-11 items-center justify-center p-1'>
+                                            <Text className='text-white'>Info</Text>
+                                        </View>
+                                    </View>
+                                    <View className='flex flex-row gap-1'>
+                                        <View className='bg-white rounded-full w-6 h-6 flex justify-center items-center'>
+                                            <Text className='text-center'>
+                                                <AntDesign name="calendar" size={17} color="#2260FF" />
+                                            </Text>
+                                        </View>
+                                        <View className='bg-white rounded-full w-6 h-6 flex justify-center items-center'>
+                                            <Text className='text-center'>
+                                                <MaterialCommunityIcons name="exclamation" size={17} color="#2260FF" />
+                                            </Text>
+                                        </View>
+                                        <View className='bg-white rounded-full w-6 h-6 flex justify-center items-center'>
+                                            <Text className='text-center'>
+                                                <AntDesign name="question" size={17} color="#2260FF" />
+                                            </Text>
+                                        </View>
+                                        <View className='bg-white rounded-full w-6 h-6 flex justify-center items-center'>
+                                            <Text className='text-center'>
+                                                <EvilIcons name="heart" size={17} color="#2260FF" />
+                                            </Text>
+                                        </View>
+                                    </View>
+                                </View>
+                            </View>
+                        </View>
+                    </View>
+                </View>
+                <View className='bg-[#CAD6FF] rounded-2xl pl-3 pr-2 py-2 mt-2'>
+                    <View className='flex flex-row items-center gap-2'>
+                        <View className='w-14 h-14 rounded-full' >
+                            <Image source={profile2} className='h-full w-full object-contain' />
+                        </View>
+                        <View>
+                            <View className='w-56  px-4 py-2'>
+                                <Text className='text-[#2260FF] font-medium text-sm'>
+                                    Dr. Alexander Bennett, Ph.D.
+                                </Text>
+                                <Text className='text-black font-light text-xs' style={{ fontFamily: 'LeagueSpartan-Bold' }}>
+                                    Dermato-Genetics
+                                </Text>
+                            </View>
+                            <View className='mt-3'>
+                                <View className='flex flex-row gap-3 items-center'>
+                                    <View className='flex flex-row gap-1'>
+                                        <View className='bg-[#2260FF] rounded-xl flex flex-row w-11 items-center justify-center p-1'>
+                                            <Text className='text-white'>Info</Text>
+                                        </View>
+                                    </View>
+                                    <View className='flex flex-row gap-1'>
+                                        <View className='bg-white rounded-full w-6 h-6 flex justify-center items-center'>
+                                            <Text className='text-center'>
+                                                <AntDesign name="calendar" size={17} color="#2260FF" />
+                                            </Text>
+                                        </View>
+                                        <View className='bg-white rounded-full w-6 h-6 flex justify-center items-center'>
+                                            <Text className='text-center'>
+                                                <MaterialCommunityIcons name="exclamation" size={17} color="#2260FF" />
+                                            </Text>
+                                        </View>
+                                        <View className='bg-white rounded-full w-6 h-6 flex justify-center items-center'>
+                                            <Text className='text-center'>
+                                                <AntDesign name="question" size={17} color="#2260FF" />
+                                            </Text>
+                                        </View>
+                                        <View className='bg-white rounded-full w-6 h-6 flex justify-center items-center'>
+                                            <Text className='text-center'>
+                                                <EvilIcons name="heart" size={17} color="#2260FF" />
+                                            </Text>
+                                        </View>
+                                    </View>
+                                </View>
+                            </View>
+                        </View>
+                    </View>
+                </View>
             </View>
         </ScrollView>
     )
