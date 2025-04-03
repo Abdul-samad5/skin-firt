@@ -1,0 +1,91 @@
+POST https://crystalokd.pythonanywhere.com/auth/token/
+Content-Type: application/json
+
+{
+  "username": "string",
+  "password": "string"
+}
+###
+POST https://crystalokd.pythonanywhere.com/users/
+Content-Type: application/json
+
+{
+   "username": "string",
+  "email": "user@example.com",
+  "first_name": "string",
+  "last_name": "string",
+  "password": "string"
+}
+###
+GET https://crystalokd.pythonanywhere.com/users/
+
+###
+POST https://crystalokd.pythonanywhere.com/posts/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM3OTk3NzExLCJpYXQiOjE3Mzc5OTc0MTEsImp0aSI6IjQ0NzljODg3MzVhYTQ2ZTJiNzFlZDc2NGJiNzg5YmQ1IiwidXNlcl9pZCI6MX0.DHLEikEYmEOkIQfbzJ4F3cBWDiWBcSHAMz4LqTkKXDs
+
+{
+  "author": 3,
+  "content": "string"
+}
+
+# import React, { useState, useEffect } from 'react';
+# import { View, Text, StyleSheet } from 'react-native';
+# import { GiftedChat } from 'react-native-gifted-chat';
+
+# // Example endpoint to fetch messages from
+# const API_URL = 'https://your-api-endpoint.com/messages'; // Replace with your actual API endpoint
+
+# const ChatScreen = () => {
+#   const [messages, setMessages] = useState([]);
+
+#   useEffect(() => {
+#     // Fetch messages from the API when the component mounts
+#     const fetchMessages = async () => {
+#       try {
+#         const response = await fetch(API_URL);
+#         const data = await response.json();
+#         const formattedMessages = data.map(message => ({
+#           _id: message.id,  // Ensure that each message has a unique _id
+#           text: message.text, // The message content
+#           createdAt: new Date(message.timestamp), // Timestamp for message
+#           user: {
+#             _id: message.userId, // The ID of the user who sent the message
+#             name: message.userName, // User name
+#             avatar: message.userAvatar, // Avatar URL (optional)
+#           },
+#         }));
+#         setMessages(formattedMessages); // Set the fetched messages
+#       } catch (error) {
+#         console.error('Error fetching messages:', error);
+#       }
+#     };
+
+#     fetchMessages();
+#   }, []);
+
+#   const onSend = (newMessages = []) => {
+#     setMessages(previousMessages => GiftedChat.append(previousMessages, newMessages));
+#   };
+
+#   return (
+#     <View style={styles.container}>
+#       <GiftedChat
+#         messages={messages}
+#         onSend={messages => onSend(messages)}
+#         user={{
+#           _id: 1, // The ID of the currently logged-in user (use a dynamic ID here)
+#         }}
+#       />
+#     </View>
+#   );
+# };
+
+# const styles = StyleSheet.create({
+#   container: {
+#     flex: 1,
+#     backgroundColor: 'white',
+#   },
+# });
+
+# export default ChatScreen;
