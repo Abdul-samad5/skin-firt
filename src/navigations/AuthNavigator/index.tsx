@@ -11,7 +11,7 @@ import { StackNavigationProps } from "@/src/shared";
 import { AntDesign } from '@expo/vector-icons';
 
 import Welcome from "@/src/screens/features/authentications/welcome";
-import Onboard from "@/src/screens/features/onboarding/onboard";
+
 
 
 const Stack = createStackNavigator();
@@ -19,7 +19,7 @@ const Stack = createStackNavigator();
 function RootNavigation({ navigation }: StackNavigationProps) {
   return (
     <Stack.Navigator
-    // initialRouteName={"Login"}
+   initialRouteName={"Login"}
     >
 
 

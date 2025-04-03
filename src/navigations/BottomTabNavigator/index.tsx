@@ -15,24 +15,6 @@ const Tab = createBottomTabNavigator();
 const BottomTabNavigator = () => {
   return (
     <Tab.Navigator
-      // screenOptions={{
-      //   tabBarShowLabel: false,
-      //   // headerShown: false,
-      //   tabBarStyle: {
-      //     position: "absolute",
-      //     bottom: 20,
-      //     left: 20,
-      //     right: 20,
-      //     backgroundColor: "#2260FF",
-      //     borderRadius: 50,
-      //     height: 70,
-      //     elevation: 10,
-      //     shadowOpacity: 0.1,
-      //     shadowRadius: 5,
-      //     paddingHorizontal: 20,
-      //     paddingTop: Platform.OS === "android" ? 0 : 10,
-      //   },
-      // }}
       screenOptions={{
         tabBarShowLabel: false,
         tabBarStyle: {
