@@ -3,8 +3,8 @@ import axios from 'axios';
 import { useAuthStoreAxiosState } from '../store/auth/useAuthFacade';
 
 const instance = axios.create({
-    //  baseURL: 'https://paivia.onrender.com/api/',
-    baseURL: "http://192.168.43.80:5000/api",
+ 
+ 
     withCredentials: true
 });
 
